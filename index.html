@@ -120,7 +120,7 @@
         <div style="height: 100px; background: tomato"></div>
     </div>  -->
 
-<!-- <body style="padding: 5rem">
+<!-- 
         <div class="card testimonial">
             <div class="grid grid--1x2">
                 <div class="testimonial__image">
@@ -153,7 +153,7 @@
             </div>
         </div>
 
-    </body> -->
+     -->
 
 <!-- 
     <div class="callout callout--primary">
@@ -215,7 +215,12 @@
                 <p class="hero__tagline">Deploye your websites less than 60 second</p>
                 <a href="" class="btn btn--accent btn--stretched">get Started</a>
             </header>
-            <img class="hero__image" src="images/banner.png" alt="">
+
+            <picture>
+                <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
+                <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
+                <img class="hero__image" src="images/banner.png" alt="">
+            </picture>
         </div>
     </section>
     <script src="js/main.js"></script>
