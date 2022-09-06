@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+// const collapsibles = document.querySelectorAll(".collapsible");
+// collapsibles.forEach((item) =>
+//     item.addEventListener("click", function() {
+//         this.classList.toggle("collapsible--expanded");
+//     })
+// );
+
+>>>>>>> c2b5cd81efbef17c0887126dc4cf19b5b223d2fb
 const navToggler = document.querySelector("nav > svg");
 const navMenu = document.querySelector("nav > ul");
 
