@@ -1,3 +1,6 @@
-document.querySelector('nav > svg').addEventListener('click', () => {
-    document.querySelector('nav > ul').classList.toggle('collapsible__content')
-})
+const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+    item.addEventListener("click", function() {
+        this.classList.toggle("collapsible--expanded");
+    })
+);
