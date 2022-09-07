@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <!-- Google fonts End-->
 
-    <link rel="stylesheet" href="CSS/normalize.css">
+
     <link rel="stylesheet" href="CSS/styles.css">
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -34,7 +34,7 @@
     <!-- Nav Bar Start-->
     <header>
         <nav class="nav collapsible">
-            <a class="nav__brand" href="/"><img src="images/logo.png" alt=""></a>
+            <a aria-label="Suraj Infotech" class="nav__brand" href="/"><img src="images/logo.png" alt=""></a>
             <svg class="icon icon--white nav__toggler">
             <use href="images/sprite.svg#menu"></use>
             </svg>
@@ -72,7 +72,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dolorem.</p>
         </header>
         <div class="input-group">
-            <input type="text" class="input" placeholder="Enter your domain name here...">
+            <input aria-label="Domain" type="text" class="input" placeholder="Enter your domain name here...">
             <button class="btn btn--accent"><svg class="icon icon--white">
                 <use href="images/sprite.svg#search"></use>
                 </svg>Search</button>
@@ -315,7 +315,11 @@
             <div class="card testimonial">
                 <div class="grid grid--1x2">
                     <div class="testimonial__image">
-                        <img src="images/testimonial.jpg" alt="A happy smiling, customer" />
+                        <picture>
+                            <source type="image/webp" srcset="images/testimonial.webp" />
+                            <img src="images/testimonial.jpg" alt="A happy smiling, customer" />
+                        </picture>
+
                         <span class="icon-container icon-container--accent">
                             <svg class="icon icon--white icon--small">
                             <use href="images/sprite.svg#quotes"></use>
