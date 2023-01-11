@@ -619,7 +619,7 @@
         }
         
         .block__heading {
-            margin-top: 0;
+            margin-top: 10rem;
         }
         
         .block--dark {
@@ -650,7 +650,7 @@
         /* Navbar */
         
         .nav {
-            background: #000;
+            /* background: #000; */
             opacity: 0.9;
             display: flex;
             justify-content: space-between;
@@ -712,6 +712,9 @@
             }
             .nav__item {
                 border: 0;
+            }
+            .block__heading {
+                margin-top: 5rem;
             }
         }
         /*=============== Sticky Nav bar ===============*/
