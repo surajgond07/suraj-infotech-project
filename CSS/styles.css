@@ -651,11 +651,17 @@
         
         .nav {
             background: #000;
+            opacity: 0.9;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            padding: 1rem;
+            padding: 1.5rem;
             align-items: center;
+            /* adding nav menu  */
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            transition: all 0.3s ease;
         }
         
         .nav__list {
@@ -707,6 +713,17 @@
             .nav__item {
                 border: 0;
             }
+        }
+        /*=============== Sticky Nav bar ===============*/
+        
+        .nav.sticky {
+            padding: 1.5rem 1rem;
+            background: black;
+            opacity: 0.8;
+        }
+        
+        .nav.sticky .nav__item>a:hover {
+            color: #fff;
         }
         /*=============== Scroll Button Start ===============*/
         
