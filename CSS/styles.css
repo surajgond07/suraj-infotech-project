@@ -619,7 +619,8 @@
         }
         
         .block__heading {
-            margin-top: 10rem;
+            /* margin-top: 10rem; */
+            padding-top: 8rem;
         }
         
         .block--dark {
@@ -715,7 +716,8 @@
                 background: none;
             }
             .block__heading {
-                margin-top: 5rem;
+                margin-top: 0;
+                padding-top: 0;
             }
         }
         /*=============== Sticky Nav bar ===============*/
